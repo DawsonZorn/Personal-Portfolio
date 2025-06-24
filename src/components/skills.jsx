@@ -1,5 +1,5 @@
 import { useState } from 'react'
 
-export default function Skills(category, icon, technologies) {
+export default function Skills({ category, icon, technologies }) {
 
 }
