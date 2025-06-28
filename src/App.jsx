@@ -5,6 +5,7 @@ import NavBar from './components/navBar.jsx'
 import Projects from './components/projects.jsx'
 import Skills from './components/skills.jsx'
 import logo from '../public/DZ.png'
+import Contact from './components/contact.jsx'
 
 import { Globe, Database, Server, Smartphone } from 'lucide-react'
 
@@ -16,21 +17,21 @@ function App() {
       description: "A sports team management app to allow players and coaches to communicate, share schedules, and manage team activities.",
       image: logo,
       technologies: ['React-Native', 'Firebase', 'Tailwind CSS', 'Expo', 'Node.js'],
-      link: "Github.com"
+      github: "https://www.freepik.com/premium-vector/caution-work-progress-icon-isolated-white-background-vector-illustration-design_36704532.htm"
     },
     {
       title: "Zorn FC E-Commerce",
       description: "A E-Commerce website for a football club that allows users to purchase merchandise, view team information, and manage their accounts.",
       image: logo,
       technologies: ['Ruby-On-Rails', 'Bootstrap CSS', 'SQLite'],
-      link: "https://github.com/DawsonZorn/ZornFC-ecommerce"
+      github: "https://github.com/DawsonZorn/ZornFC-ecommerce"
     },
     {
       title: "Soccer Fan Club CMS Website",
       description: "A content management system website for a mock soccer fan club that allows users to view news, events, and manage their accounts.",
       image: logo,
       technologies: ['PHP', 'Laravel', 'Tailwind CSS', 'React', 'Docker'],
-      link: "https://github.com/DawsonZorn/Dawson_WEBD2Project"
+      github: "https://github.com/DawsonZorn/Dawson_WEBD2Project"
     }
   ];
 
@@ -63,7 +64,7 @@ function App() {
       <Header />
       <About />
 
-      <div id="projects" className="w-full min-h-screen bg-stone-800 py-16 px-4">
+      <div id="projects" className="w-full min-h-screen bg-stone-800 py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-white text-center mb-12">My Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -74,14 +75,14 @@ function App() {
                 description={project.description}
                 image={project.image}
                 technologies={project.technologies}
-                link={project.link}
+                github={project.github}
               />
             ))}
           </div>
         </div>
       </div>
 
-      <div id="skills" className="w-full min-h-screen bg-stone-800 py-16 px-4">
+      <div id="skills" className="w-full py-32 bg-stone-800 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-white text-center mb-12">My Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -89,12 +90,15 @@ function App() {
               <Skills
                 key={index}
                 category={skill.category}
+                icon={skill.icon}
                 technologies={skill.technologies}
               />
             ))}
           </div>
         </div>
       </div>
+
+      <Contact />
     </div>
   )
 }

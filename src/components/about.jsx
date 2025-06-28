@@ -2,7 +2,7 @@ import Image from '../../public/image.jpg';
 
 export default function About() {
   return (
-    <div id="about" className="w-full min-h-screen bg-stone-800 flex items-center justify-center px-4">
+    <div id="about" className="w-full min-h-screen flex items-center justify-center px-4 bg-stone-800">
       <div className="max-w-6xl mx-auto flex items-center gap-6">
         <div className="flex-1 pr-6">
           <h1 className="text-4xl text-white font-bold mb-4">About Me</h1>
@@ -20,9 +20,7 @@ export default function About() {
           <img
             src={Image}
             alt="Profile"
-            width={400}
-            height={400}
-            className="rounded-full border-2 border-border"
+            className="w-115 h-115 rounded-full border-2 border-white object-cover"
           />
         </div>
       </div>

@@ -1,16 +1,19 @@
-import { useState } from 'react'
 
 export default function Skills({ category, icon, technologies }) {
   return (
-    <div id="skills" className="flex flex-col items-center justify-center min-h-screen bg-stone-800">
-      <h1 className="text-4xl font-bold mb-4">{category}</h1>
-      <div className="flex items-center space-x-2 mb-6">
-        {icon && <img src={icon} alt={`${category} icon`} className="h-8 w-8" />}
-        <span className="text-lg font-semibold">{category} Skills</span>
+    <div className="bg-stone-700 rounded-lg p-6 shadow-lg ">
+      <div className="mb-4">
+        <h3 className="text-xl font-bold text-white flex items-center gap-2">
+          {icon && <span className="text-blue-400">{icon}</span>}
+          {category}
+        </h3>
       </div>
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap gap-2">
         {technologies.map((tech, index) => (
-          <span key={index} className="bg-blue-800 text-white px-3 py-1 rounded-full">
+          <span
+            key={index}
+            className="bg-stone-600 text-white px-3 py-1 rounded-full text-sm border border-stone-500 hover:bg-stone-500 transition-colors"
+          >
             {tech}
           </span>
         ))}
