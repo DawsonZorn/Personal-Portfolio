@@ -4,7 +4,9 @@ import About from './components/about.jsx'
 import NavBar from './components/navBar.jsx'
 import Projects from './components/projects.jsx'
 import Skills from './components/skills.jsx'
-import logo from '../public/DZ.png'
+import logo from '/DZ.png'
+import clubconnect from '/ClubConnect.png'
+import ZornFC from '/zornfc.png'
 import Contact from './components/contact.jsx'
 
 import { Globe, Database, Server, Smartphone } from 'lucide-react'
@@ -15,14 +17,14 @@ function App() {
     {
       title: "Club Connect",
       description: "A sports team management app to allow players and coaches to communicate, share schedules, and manage team activities.",
-      image: logo,
+      image: clubconnect,
       technologies: ['React-Native', 'Firebase', 'Tailwind CSS', 'Expo', 'Node.js'],
       github: "https://www.freepik.com/premium-vector/caution-work-progress-icon-isolated-white-background-vector-illustration-design_36704532.htm"
     },
     {
       title: "Zorn FC E-Commerce",
       description: "A E-Commerce website for a football club that allows users to purchase merchandise, view team information, and manage their accounts.",
-      image: logo,
+      image: ZornFC,
       technologies: ['Ruby-On-Rails', 'Bootstrap CSS', 'SQLite'],
       github: "https://github.com/DawsonZorn/ZornFC-ecommerce"
     },
@@ -61,7 +63,6 @@ function App() {
   return (
     <div className="min-h-screen bg-background">
       <NavBar />
-      <Header />
       <About />
 
       <div id="projects" className="w-full min-h-screen bg-stone-800 py-20 px-4">

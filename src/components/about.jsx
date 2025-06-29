@@ -1,4 +1,4 @@
-import Image from '../../public/image.jpg';
+import Image from '/image.jpg';
 
 export default function About() {
   return (
@@ -6,10 +6,12 @@ export default function About() {
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
         {/* Text content */}
         <div className="flex-1 text-center lg:text-left lg:pr-6">
-          <h1 className="text-3xl sm:text-4xl text-white font-bold mb-4">About Me</h1>
-          <p className="text-lg sm:text-xl text-white mb-6">
-            Hello! I'm <span className="font-semibold">Dawson</span>
-          </p>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl text-white font-bold mb-4">
+            Hi, I'm <span className="text-emerald-300">Dawson</span>
+          </h1>
+          <h2 className="text-2xl sm:text-3xl text-gray-300 font-semibold mb-6">
+            Full-Stack Developer
+          </h2>
           <p className="text-base sm:text-lg text-gray-200 mb-8">
             I am a passionate full-stack developer with a love for creating dynamic and responsive web applications.
             I enjoy working with modern technologies and continuously learning new skills to enhance my craft.
