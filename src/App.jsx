@@ -16,23 +16,29 @@ function App() {
   const projectsData = [
     {
       title: "Club Connect",
-      description: "A sports team management app to allow players and coaches to communicate, share schedules, and manage team activities.",
+      goal: "As a player on several amateur soccer teams, I noticed that coordination was always a challenge. We relied on scattered group chats, inconsistent attendance, and clunky third-party apps that didn't fully meet our needs.",
+      solution: "Club Connect is a mobile-first app I'm building to streamline team management. It allows coaches to create teams, add players, and schedule matches. I'm using Firebase for real-time data handling and user management, with a focus on simplicity and speed.",
+      result: "Currently, core features like match scheduling and player/team creation are complete. Next, I'll be adding real-time chat and player availability to support seamless communication.",
       image: clubconnect,
       technologies: ['React-Native', 'Firebase', 'Tailwind CSS', 'Expo', 'Node.js'],
       github: "https://www.freepik.com/premium-vector/caution-work-progress-icon-isolated-white-background-vector-illustration-design_36704532.htm"
     },
     {
       title: "Zorn FC E-Commerce",
-      description: "A E-Commerce website for a football club that allows users to purchase merchandise, view team information, and manage their accounts.",
+      goal: "Need for a comprehensive e-commerce platform for football clubs to sell merchandise and manage team information effectively.",
+      solution: "Built a full-stack e-commerce website using Ruby on Rails with Bootstrap CSS for responsive design and user-friendly interface.",
+      result: "Successfully created a functional e-commerce platform with user account management, product catalog, and team information sections.",
       image: ZornFC,
       technologies: ['Ruby-On-Rails', 'Bootstrap CSS', 'SQLite'],
       github: "https://github.com/DawsonZorn/ZornFC-ecommerce"
     },
     {
       title: "Soccer Fan Club CMS Website",
-      description: "A content management system website for a mock soccer fan club that allows users to view news, events, and manage their accounts.",
+      goal: "Create a content management system for soccer fan clubs to manage news, events, and member accounts efficiently.",
+      solution: "Developed a CMS using PHP Laravel framework with React components, containerized with Docker for easy deployment.",
+      result: "Delivered a fully functional CMS with user authentication, content management, and event scheduling capabilities.",
       image: logo,
-      technologies: ['PHP', 'Laravel', 'Tailwind CSS', 'React', 'Docker'],
+      technologies: ['PHP', 'Laravel', 'Tailwind CSS', 'React', 'Docker', 'MySQL'],
       github: "https://github.com/DawsonZorn/Dawson_WEBD2Project"
     }
   ];
@@ -73,7 +79,9 @@ function App() {
               <Projects
                 key={index}
                 title={project.title}
-                description={project.description}
+                goal={project.goal}
+                solution={project.solution}
+                result={project.result}
                 image={project.image}
                 technologies={project.technologies}
                 github={project.github}

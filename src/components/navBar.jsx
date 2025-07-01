@@ -1,5 +1,5 @@
 import { Code, Github, Linkedin } from 'lucide-react'
-import DZ from '../../public/DZ.png'
+import DZ from '/DZ.png'
 
 export default function NavBar() {
   return (
