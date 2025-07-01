@@ -1,4 +1,4 @@
-import Image from '/image.jpg';
+import Image from '/headshot.png';
 
 export default function About() {
   return (
@@ -24,7 +24,7 @@ export default function About() {
           <img
             src={Image}
             alt="Profile"
-            className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full border-2 border-white object-cover"
+            className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full border-2 border-white object-cover object-[50%_35%]"
           />
         </div>
       </div>

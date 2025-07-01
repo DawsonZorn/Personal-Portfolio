@@ -23,7 +23,7 @@ export default function Projects({ title, goal, solution, result, image, technol
           <div className="mb-4">
             <div className="flex items-center gap-2 mb-2">
               <Target className="w-4 h-4 text-red-400" />
-              <span className="text-red-400 font-semibold text-sm">Goal</span>
+              <span className="text-red-400 font-semibold text-sm">Problem</span>
             </div>
             <p className="text-gray-300 text-md ml-6">{goal}</p>
           </div>

@@ -34,7 +34,7 @@ function App() {
     },
     {
       title: "Soccer Fan Club CMS Website",
-      goal: "Create a content management system for soccer fan clubs to manage news, events, and member accounts efficiently.",
+      goal: "Fan clubs need efficient ways to manage content, communicate with members, and organize events without relying on multiple disconnected platforms.",
       solution: "Developed a CMS using PHP Laravel framework with React components, containerized with Docker for easy deployment.",
       result: "Delivered a fully functional CMS with user authentication, content management, and event scheduling capabilities.",
       image: logo,
